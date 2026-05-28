@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamard Optique - Votre opticien visagiste à l'Arbresle (69)</title>
+</head>
+<link rel="shortcut icon" href="image/headerlogo.png" type="image/x-icon">
+<link rel="stylesheet" href="./output.css">
+<style> 
+
+    @keyframes animeActe1 {
+        0%{margin-left: -20px; color: transparent; z-index: -3;}
+        100%{margin-left: 0; z-index: 1 ;}
+    }
+    @keyframes animeActe2 {
+        0%{margin-left: 0px; z-index: 1;}
+        100%{margin-left: -20px; color: transparent; z-index: -3;}
+        
+    }
+</style>
+<body class="font-sans m-0 p-0  text-[rgb(20,40,60)]">
+    <div>
+        <header class="block w-full m-auto fixed z-30 top-[0px]">
+            <div class="bg-[rgb(250,230,230)] w-[100%] flex m-[0px] relative h-[40px]">
+                <div  class="m-auto ml-[100px]">
+                    <p class="text-[rgb(170,160,150)] text-[11px] font-medium m-[0px]">
+                        Chamard Optique - Opticien à l'Arbresle 
+                    (69) depuis 1950 | Lunettes et lentilles</p>
+                </div>
+                <div class="m-[0px] p-[0px] w-[68px] h-[100%] flex mr-[70px]">
+                        <a href="https://www.facebook.com/nathaliechamardopticiens" class="h-[100%] no-underline text-[rgb(20,40,60)] tracking-[2px]">
+                            <img class="w-[100%] m-[0px] h-[100%]" src="image/facebook (1).png" onmouseover="faceColor1()" onmouseout="faceNoColor1()" id="face1"
+                             alt="">
+                        </a>    
+                        <a href="https://www.instagram.com/nathaliechamardopticiens/" class="h-full no-underline text-[rgb(20,40,60)] tracking-[2px]">
+                            <img src="image/instagram (1).png"
+                            class="w-[100%] m-[0px] h-[100%]" alt="" onmouseover="instaColor1()" onmouseout="instaNoColor1()" id="insta1">
+                        </a>
+                </div>
+            </div>
+            <div  class="bg-[rgb(240,250,210)] w-[100%] h-[80px] text-center flex m-auto justify-center text-[15px] font-semibold uppercase">
+                <ul  class="list-none flex justify-between text-center w-[45%] ml-[10%] mr-[100px] m-auto">
+                    <li><a href="https://www.nathalie-chamard-opticiens.fr/" class="border-b-[4px] border-b-[rgb(250,120,50)] no-underline text-[rgb(20,40,60)] tracking-[2px] pb-[20px]">Accueil</a></li>
+                    <li>
+                        <a class="no-underline text-[rgb(20,40,60)] tracking-[2px] pb-[20px] hover:border-b-[rgb(250,120,50)] hover:border-b-[4px]" href="https://www.nathalie-chamard-opticiens.fr/lunettes.php" onmouseover="affiche()" onmouseout="efface()" id="deuxiemeLien">
+                            Lunettes
+                            
+                            <div class="absolute w-auto h-auto p-[0px] m-[0px] text-left ml-[-10px] pt-[42px] hidden z-20 pointer" 
+                             id="SousCategorie" onmouseover="sousAffiche()" onmouseout="sousEfface()">
+                             <div class="bg-[rgb(215,255,200)] w-auto h-auto font-bold">
+                                <a class="no-underline text-[rgb(20,40,60)] tracking-[0px] font-thin m-0 z-40 p-0 w-auto lowercase" href="https://www.nathalie-chamard-opticiens.fr/lunettes-enfant.php"><div class="m-auto py-[7px] px-[10px] hover:bg-[rgb(20,40,60)] hover:text-[rgb(255,255,255)]">Lunnettes enfant</div></a>
+                                <a class="no-underline text-[rgb(20,40,60)] tracking-[0px] font-thin m-0 z-40 p-0 w-auto lowercase" href="https://www.nathalie-chamard-opticiens.fr/lunettes-femme.php"><div class="m-auto py-[7px] px-[10px] hover:bg-[rgb(20,40,60)] hover:text-[rgb(255,255,255)]">Lunnettes femme</div></a>
+                                <a class="no-underline text-[rgb(20,40,60)] tracking-[0px] font-thin m-0 z-40 p-0 w-auto lowercase" href="https://www.nathalie-chamard-opticiens.fr/lunettes-homme.php"><div class="m-auto py-[7px] px-[10px] hover:bg-[rgb(20,40,60)] hover:text-[rgb(255,255,255)]">Lunnettes homme</div></a>
+                             </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li><a class="no-underline text-[rgb(20,40,60)] tracking-[2px] pb-[20px] hover:border-b-[rgb(250,120,50)] hover:border-b-[4px]" href="https://www.nathalie-chamard-opticiens.fr/expert-en-contactologie.php">Lentilles</a></li>
+                    <li><a class="no-underline text-[rgb(20,40,60)] tracking-[2px]" href="https://www.nathalie-chamard-opticiens.fr/zeiss.php"><div class="w-[80px] text-center hover:border-b-[rgb(250,120,50)] hover:border-b-[4px] border-b-transparent border-b-[4px]" id="SpecialZ">
+                                     Verres Zeiss
+                                    </div>
+                    </a></li>
+                </ul>
+                <ul>
+                    <li><a class="no-underline text-[rgb(20,40,60)] tracking-[2px] list-none" class="border-transparent" href="https://www.nathalie-chamard-opticiens.fr/"><img src="image/headerlogo(1).png" alt="" class="w-[50px] transition-all transition-ease duration-0.7 scale-600 relative hover:top-[55px] top-[50px]" id="imageLogo"></a></li>
+                </ul>                
+                <ul class="list-none flex justify-between text-center w-[45%] mr-[10%] ml-[100px] m-auto">
+                    <li><a class="no-underline text-[rgb(20,40,60)] tracking-[2px] text-center h-full m-auto" href="http://127.0.0.1:5500/src/index.html"><div id="SpecialZ" class="h-full m-auto text-center hover:border-b-[rgb(250,120,50)] hover:border-b-[4px] m-auto border-b-transparent border-b-[4px] w-[80px]">Votre opticien</div></a></li>
+                    <li><a class="no-underline text-[rgb(20,40,60)] tracking-[2px]" href="http://127.0.0.1:5500/src/index.html"><div id="SpecialZ" class="text-center hover:border-b-[rgb(250,120,50)] hover:border-b-[4px] border-b-transparent border-b-[4px] w-[100px]">Opticien à domicile</div></a></li>    
+                    <li><a class="no-underline text-[rgb(20,40,60)] tracking-[2px] pb-[20px] hover:border-b-[rgb(250,120,50)] hover:border-b-[4px]" href="http://127.0.0.1:5500/src/index.html">Contact</a></li>    
+                </ul>
+            </div>
+        </header>
+        <div class="bg-[rgb(255,200,240)] w-[100%] h-auto relative pb-[70px]">
+            <div class="w-full h-auto flex absolute bg-[rgb(255,200,240)]" style="animation: animeActe1 4s alternate-reverse infinite;" id="contenu1">
+                <div class="w-[40%] ml-[100px] h-auto relative mt-[50px] top-[100px]" id="position">
+                    <h2 class="font-light text-[20px] font-[Segoe_UI,Tahoma,Geneva,Verdana,sans-serif]">Nathalie Chamard Opticiens</h2>
+                    <h2 class="text-[60px] font-extrabold leading-[-100px]">Votre opticien à l'Arbresle </h2>
+                    <p class="text-[18px]">
+                        Choisir des lunettes n'a jamais été aussi agréable, grâce à notre équipe aussi passionnée que qualifiée.
+                    </p>
+                    <a href="" id="lienSpecial" class="hover:bg-[rgb(250,120,50)] px-[30px] py-[12px] uppercase bg-[rgb(200,40,40)] text-[rgb(250,250,250)] tracking-[0px] text-[15px] relative top-[40px]">
+                            Prendre rendez vous
+                    </a>
+                </div>
+                <div class="w-[60%]">
+                    <img class="w-full h-full" src="image/photo01.jpg" alt="">
+                </div>                
+            </div>
+            <div class="w-full h-auto flex absolute bg-[rgb(255,200,240)]" style="animation: animeActe2 4s alternate-reverse infinite;" id="contenu2">
+                <div class="w-[40%] ml-[100px] h-auto relative mt-[50px] top-[100px]" id="position">
+                    <h2 class="text-[60px] font-extrabold leading-[-100px]">Opticien certifié Optikid</h2>
+                    <p class="text-[18px]">
+                        Une experience reconnue dans le choix et l'ajustement des lunettes pour enfant et adolescebt
+                    </p>
+                    <a href="" id="lienSpecial" class="hover:bg-[rgb(250,120,50)] px-[30px] py-[12px] uppercase bg-[rgb(200,40,40)] text-[rgb(250,250,250)] tracking-[0px] text-[15px] relative top-[40px]">
+                            NOTRE SAVOIR-FAIRE DES LUNETTES POUR ENFANT
+                    </a>
+                </div>
+                <div class="w-[60%]">
+                    <img class="w-full h-full" src="image/bandeau.jpg" alt="">
+                </div>                
+            </div>
+        </div>
+        <div class="w-[100%] m-auto flex bg-[rgb(255,220,220)] h-[400px] pb-[100px] mt-[610px]">
+            <div class="w-[80%] flex m-auto mt-[80px] items-center flex-row justify-between">
+                <a href="">
+                    <div class="w-[20%] h-[250px]">
+                        <div class="bg-[url('image/photo02.jpg')] w-[100%] h-[290px] bg-center relative text-center rounded-[100px_100px_0px_0px] transition-all transition-ease duration-0.3 hover:scale-110" id="bordure1"
+                                 onmouseover="afficheImage1()" onmouseout="effaceImage1()">                            
+                        </div>
+                        <div class="bg-[rgb(255,255,255)] m-auto justify-center w-[80%] h-[120px] relative top-[-20%] bg-center bg-cover text-center" id="bd1" onmouseover="afficheImage1()" onmouseout="effaceImage1()">
+                                <p class="top-[40px] relative text-[rgb(15,55,55)] font-bold">Changer de</p>
+                                <h2 class="relative top-[40px] text-[rgb(15,55,55)] font-bold">Lunettes</h2>
+                                <a href="http://127.0.0.1:5500/src/index.html" class="relative top-[55%] px-[20px] py-[10px] no-underline  uppercase bg-[rgb(200,40,40)] text-[rgb(250,250,250)] tracking-[0px] text-[15px] hover:bg-[rgb(250,120,50)]" id="lienSpecial1">Découvrir</a>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="w-[20%] h-[250px]">
+                        <div src="" class="bg-[url('image/photo03.jpg')] w-[100%] h-[290px] bg-center relative text-center rounded-[100px_100px_0px_0px] transition-all transition-ease duration-0.3 hover:scale-110" id="bordure2"
+                                 onmouseover="afficheImage2()" onmouseout="effaceImage2()" id="bordure2">                            
+                        </div>
+                        <div class="bg-[rgb(255,255,255)] m-auto justify-center w-[80%] h-[120px] relative top-[-20%] bg-center bg-cover text-center" id="bd2" onmouseover="afficheImage2()" onmouseout="effaceImage2()">
+                                <p class="relative top-[40px] text-[rgb(15,55,55)] font-bold">Nos solutions</p>
+                                <h2 class="relative top-[40px] text-[rgb(15,55,55)] font-bold">Lentilles</h2>
+                                <a href="http://127.0.0.1:5500/src/index.html" class="relative top-[55%] px-[20px] py-[10px] no-underline  uppercase bg-[rgb(200,40,40)] text-[rgb(250,250,250)] tracking-[0px] text-[15px] hover:bg-[rgb(250,120,50)]" id="lienSpecial2">Découvrir</a>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="w-[20%] h-[250px]">
+                        <div class="bg-[url('image/photo04.jpg')] w-[100%] h-[290px] bg-center relative text-center rounded-[100px_100px_0px_0px] transition-all transition-ease duration-0.3 hover:scale-110""
+                                 onmouseover="afficheImage3()" onmouseout="effaceImage3()" id="bordure3">                            
+                        </div>
+                        <div class="bg-[rgb(255,255,255)] m-auto justify-center w-[80%] h-[120px] relative top-[-20%] bg-center bg-cover text-center" id="bd3" onmouseover="afficheImage3()" onmouseout="effaceImage3()">
+                                <p class="relative top-[40px] text-[rgb(15,55,55)] font-bold">Les verres</p>
+                                <h2 class="relative top-[40px] text-[rgb(15,55,55)] font-bold">Zeiss</h2>
+                                <a href="http://127.0.0.1:5500/src/index.html" class="relative top-[55%] px-[20px] py-[10px] no-underline  uppercase bg-[rgb(200,40,40)] text-[rgb(250,250,250)] tracking-[0px] text-[15px] hover:bg-[rgb(250,120,50)]" id="lienSpecial3">Découvrir</a>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="w-[20%] h-[250px]">
+                        <div class="bg-[url('image/photo05.jpg')] w-[100%] h-[290px] bg-center relative text-center rounded-[100px_100px_0px_0px] transition-all transition-ease duration-0.3 hover:scale-110"
+                                 onmouseover="afficheImage4()" onmouseout="effaceImage4()" id="bordure4">                            
+                        </div>
+                        <div class="bg-[rgb(255,255,255)] m-auto justify-center w-[80%] h-[120px] relative top-[-20%] bg-center bg-cover text-center" id="bd4" onmouseover="afficheImage4()" onmouseout="effaceImage4()">
+                                <p class="relative top-[40px] text-[rgb(15,55,55)] font-bold">RDV à</p>
+                                <h2 class="relative top-[40px] text-[rgb(15,55,55)] font-bold">Domicile</h2>
+                                <a href="http://127.0.0.1:5500/src/index.html" class="relative top-[55%] px-[20px] py-[10px] no-underline  uppercase bg-[rgb(200,40,40)] text-[rgb(250,250,250)] tracking-[0px] hover:bg-[rgb(250,120,50)]" id="lienSpecial4">Découvrir</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="bg-[rgb(255,245,255)] text-center pt-[100px] m-auto w-[100%] justify-center">
+            <h2 class="text-[50px] uppercase">
+                Chamard Opticiens
+            </h2>
+            <h2 class="text-[50px] uppercase">
+                Votre opticien à l’Arbresle
+            </h2>
+            <p class="text-center text-[25px] w-[87%] m-auto mt-[50px] italic">                
+                Depuis 1950, Chamard Opticiens met son savoir-faire de l’optique au service de votre vision. Installée en plein cœur de L’Arbresle, 
+                notre entreprise familiale est bien plus qu’un simple opticien.
+            </p>
+            <p class="relative top-[40px] text-[rgb(200,40,40)] font-bold text-center text-[20px] m-auto">
+                Vous y êtes accueillis par une équipe aussi passionnée que qualifiée.
+            </p>
+            <p class="relative top-[40px] text-[rgb(200,40,40)] font-bold text-center text-[20px]">
+                Entièrement à votre écoute, nous vous conseillons dans une ambiance conviviale et colorée.
+            </p>
+            <p class="text-center text-[20px] text-[rgb(200, 40, 40)] font-bold top-[40px] relative">
+                Vous choisissez vos nouvelles lunettes ou lentilles dans la bonne humeur !
+            </p>
+        </div>
+        <div class="flex relative top-[130px] justify-between w-[80%] m-auto">
+            <div class="m-auto">Chamard Opticiens, votre magasin d'optique à l'Arbresle</div>
+            <div class="text-[30px] m-auto border-l-[7px] border-l-[rgb(250,120,50)] pl-[30px] font-bold">Une expertise complète de l’optique</div>
+        </div>
+        <div class="relative top-[160px] ml-[100px]">
+                <div>Pour garantir votre satisfaction, nous mettons à votre disposition un savoir-faire global de l’optique.</div>
+                <div class="l-[30px] relative top-[10px] text-[17px] w-[88%]">
+                    <ul class="list-disc; text-[rgb(20,40,60)]">
+                        <li><strong class="text-[rgb(20,40,60)]">Une équipe qualifiée et diplômée,</strong> spécialisée en santé visuelle et contactologie.</li>    
+                        <li><strong class="text-[rgb(20,40,60)]">Une prise de rendez-vous</strong> possible <a href="http://127.0.0.1:5500/src/index.html">via la plateforme Doctolib </a> : simple et rapide !</li>    
+                        <li><strong class="text-[rgb(20,40,60)]">Des contrôles de vue réalisés sur place. </strong> Un gain de temps et une précision optimale !</li>    
+                        <li><strong class="text-[rgb(20,40,60)]">Un atelier intégré pour le montage des verres,</strong> sans sous-traitance, qui nous permet de raccourcir les délais et de garantir une parfaite qualité de pose.</li>
+                        <li><a href="http://127.0.0.1:5500/src/index.html" class="text-[rgb(200, 40, 40)]"><strong>Un service d’opticien à domicile, </strong></a>disponible dans les nombreux villages entourant l’Arbresle : Bully, Chevinay, Eveux, Fleurieux-sur-l'Arbresle, Lentilly, Sain-Bel, Saint-Germain Nuelles, Saint-Pierre la Palud, Savigny, Sourcieux les Mines (69210), Alix, Belmont d'Azergues, Charnay, Chasselay, Châtillon, Chazay-d'Azergues, Chessy, Civrieux d'Azergues, Dommartin, Les Chères, Lissieu, Lozanne, Marcilly d'Azergues, Saint-Jean-des-Vignes (69380), Bessenay, Bibost, Brullioles, Brussieu, Courzieu, Saint-Julien sur Bibost (69690).</li>    
+                    </ul>
+                </div>
+        </div>
+        <div class="justify-center relative top-[200px] text-center text-[rgb(20,40,60)]" >
+            <a href="http://127.0.0.1:5500/src/index.html" id="lienSpecial" class="py-[10px] px-[20px] no-underline text-[rgb(20,40,60)] uppercase bg-[rgb(200,40,40)] text-[rgb(250,250,250)] tracking-[0px] hover:bg-[rgb(250,120,50)]">Découvrez notre boutique en visite virtuelle</a>
+        </div>
+        <div>
+            <div class="text-[rgb(20,40,60)] bg-[rgb(250,170,50)] relative top-[300px] text-[rgb(255,255,250)] w-[80%] m-[auto] pl-[50px] h-[950px] flex">
+                <div class="w-[50%] pt-[60px] h-full">
+                    <h2 class="text-[rgb(255,255,250)] text-[35px] w-[100%] border-l-[5px] border-l-[rgb(200,40,40)] pl-[20px]">Des lunettes pour tous les styles, toutes les envies</h2>
+                    <p class="text-[rgb(255,255,250)] mt-[20px] w-[92%] line-[30px]">
+                        Vous trouverez, chez <a href="" class="text-[rgb(200,40,40)]">Chamard Opticiens</a>, une large gamme de montures pour
+                        <a href="" class="text-[rgb(200,40,40)]"> homme</a>, <a href="" class="text-[rgb(200,40,40)]">femme</a> et <a href="" class="text-[rgb(200,40,40)]">enfant</a>
+                        , adaptées à toutes les morphologies, styles et budgets. Vous cherchez des lunettes élégantes, discrètes ou audacieuses ? Nous avons ce qu’il vous faut !
+                    </p>
+                    <h3 class="text-[rgb(255,255,240)] mt-[20px] w-[95%] italic"><strong>Optikid </strong> : l’expertise visuelle des enfants et adolescents</h3>
+                    <p class="mt-[10px] text-[rgb(255,255,240)] line-[30px] w-[41%]">
+                        Certifié Optikid, Chamard Opticiens vous offre un choix varié de montures spécialement conçues pour les besoins des plus jeunes : des lunettes robustes, confortables et esthétiques, qui accompagnent leur quotidien en toute sérénité.
+                    </p>
+                    <h3 class="text-[rgb(255,255,240)] mt-[20px] italic">Lentilles de contact</h3>
+                    <p class="text-[rgb(255,255,240)] mt-[10px] line-[30px] w-[80%]">
+                        Une large gamme de lentilles et de produits d’entretien vous attend en magasin. Diplômées en contactologie, nos opticiennes répondront à toutes vos questions et vous guideront vers les solutions les plus adaptées.
+                    </p>
+                        <a href="http://127.0.0.1:5500/src/index.html" class="py-[10px] px-[20px] relative text-center top-[20px] no-underline text-[rgb(20,40,60)] tracking-[2px]">
+                        <div class="text-center  w-[96%] py-[10px] px-[20px] text-[rgb(255,255,240)] bg-[rgb(200,40,40)] hover:bg-rgb(250,120,50)" id="lien">
+                                Contactez votre expert de l'optique à l’Arbresle (69)
+                        </div>
+                        </a>
+                </div>
+                <div class="w-[50%] h-full bg-[url('image/presentationimagecadre.jpg')] bg-center bg-cover ">
+                
+                </div>
+            </div>
+                <div class="bg-[rgb(220,220,220)] relative top-[500px] text-[rgb(20,40,60)] ">
+                    <div class="text-center w-full m-auto pt-[40px]"><img src="https://www.nathalie-chamard-opticiens.fr/scripts/files/677ce58a14f724.23285527/reviews.webp" alt="" width="200px" class="text-center m-auto"></div>
+                    <div><h1 class="text-center mt-[70px] text-[50px] uppercase">Notre actualité</h1></div>
+                    <div><h3 class="text-20px font-thin text-center mt-[20px]">Contenu à venir</h3></div>
+                    <div class="bg-[rgb(200, 40, 40)] w-[70%] h-[200px] m-auto mt-[40px] relative top-[50px] bg-[rgb(250,70,70)] text-center flex justify-between py-[20px] px-[30px]">
+                        <img src="image/banana-moon.png" alt="" width="100px">
+                        <img src="image/chamborelle.png" alt="" width="100px">
+                        <img src="image/christian-lacroix.png" alt="" width="100px">
+                        <img src="image/hypnotic.png" alt="" width="100px">
+                        <img src="image/lamarca.png" alt="" width="100px">
+                    </div>
+                </div>
+            </div>
+            <div class="text-[rgb(20,40,60)] block w-[60%] text-center m-auto bg-[rgb(240,240,240)] h-auto relative top-[650px] pl-[60px] pb-[60px] z-30" style="box-shadow: 0px 0px 20px black">
+                <div class="text-center uppercase top-[20px] relative"><h2>Horaires</h2></div>
+                <div class="flex text-left justify-between w-[60%] relative top-[20px] line-[30px]">
+                    <div class="text-left">
+                        <strong>Lundi</strong><br>
+                        Fermé <br>
+                        <strong>Mercredi</strong><br>
+                        09:00 - 12:15 // 14:30 - 19:00 <br>
+                        <strong>Vendredi</strong> <br>
+                        09:00 - 12:15 // 14:30 - 19:00 <br> 
+                        <strong>Dimanche</strong> <br>
+                        Fermé
+                    </div>
+                    <div class="text-left">
+                        <strong>Mardi</strong> <br>
+                        09:00 - 12:15 // 14:30 - 19:00 <br>
+                        <strong>Jeudi</strong> <br>
+                        09:00 - 12:15 // 14:30 - 19:00 <br>
+                        <strong>Samedi</strong> <br>
+                        09:00 - 12:15 // 14:30 - 19:00
+                    </div>
+                </div>
+                <div class="text-justify w-[60%] relative top-[30px] font-[900] justify-left" >Possibilité de rendez-vous au 22 Rue Charles de Gaulle, à L’Arbresle, le lundi ainsi qu'entre 12h et 14h chaque jour. Réservation par téléphone.</div>
+            </div>
+    </div>
+    <footer class="text-[rgb(20,40,60)] relative top-[610px] w-[100%] bg-[rgb(220,220,220)] pt-[100px] text-[15px] pb-[100px]">
+        <div class="flex w-[100%] justify-center">
+            <div class="w-[20%]"><a href="">CHAMARD OPTIQUE SARL : Magasin d'optique à l'Arbresle (Accueil)</a></div>
+            <div class="w-[20%]">
+                <h2>
+                    Information
+                </h2>
+                <div class="w-[60px] border-[rgb(250,120,50)] border-[1px] mt-[5px]"></div>
+                <p class="mt-[20px]">Nathalie Chamard et son équipe vous accueillent dans leur magasin d'optique situé à L'Arbresle. Vos professionnels en santé visuelle vous présentent un large choix de montures pour tous les goûts et toutes les physionomies. Spécialistes des lunettes pour tous !</p>
+            </div>
+            <div class="w-[20%] relative left-[30px]">
+                <h2>Navigation</h2>
+                <div class="w-[60px] border-[rgb(250,120,50)] border-[1px] mt-[5px]"></div>
+                <ul class="list-disc; line-[30px] mt-[20px] font-bold letter-normal ml-[30px]">
+                    <li><div><a href=""><div class="border-transparent no-underline text-[rgb(20,40,60)] tracking-[2px]">ACCUEIL</div></a></div></li>
+                    <li><div><a href=""><div class="border-transparent no-underline text-[rgb(20,40,60)] tracking-[2px]">LUNETTES</div></a></div></li>
+                    <li><div><a class="border-transparent no-underline text-[rgb(20,40,60)] tracking-[2px]" href=""><div class="border-transparent">LENTILLES</div></a></div></li>
+                    <li><div><a class="border-transparent no-underline text-[rgb(20,40,60)] tracking-[2px]" href=""> <div class="border-transparent">VERRES ZEISS</div></a></div></li>
+                </ul>
+            </div>
+            <div class="w-[20%]">
+                <h2> 
+                    <br>
+                </h2>
+                <ul class="list-disc line-30px mt-[25px] font-900">
+                    <li><a class="border-transparent no-underline text-[rgb(20,40,60)] tracking-[2px]" href=""><div>VOTRE OPTICIEN</div></a></li>
+                    <li><a class="border-transparent no-underline text-[rgb(20,40,60)] tracking-[2px]" href=""><div>VOTRE À DOMICILE</div></a></li>
+                    <li><a class="border-transparent no-underline text-[rgb(20,40,60)] tracking-[2px]" href=""><div>CONTACT</div></a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Nous suivre</h2>
+                <div class="w-[60px] border-[rgb(250,120,50)] border-[1px]"></div>
+                <div class="flex mt-[10px]">
+                    <img src="image/facebook (1).png" width="50px" alt="" id="face2" onmouseover="faceColor2()" onmouseout="faceNoColor2()">
+                    <img src="image/instagram (1).png" width="50px" alt="" id="insta2" onmouseover="instaColor2()" onmouseout="instaNoColor2">
+                </div>
+            </div>
+        </div>
+        <div class="w-[90%] text-center flex justify-between m-auto mt-[40px] border-t-[2px] border-t[rgb(170,160,150)] py-[10px] px-[20px] border-b-[2px] border-[rgb(170,160,150)]">
+            <div class="m-auto">© Chamard Optique 2026 | Mentions légales | Plan du site | Gestion des cookies | Mise à jour le 04/02/2025</div>
+            <div class="m-auto text-center justify-center h-[100%] flex"><div class="text-center m-auto text-[12px]">Réalisé par <a href="" id="lien2" class="hover:text-[rgba(15,55,55,0.6)]"> Cognix Systems</a> sur <a href="" id="lien2" class="hover:text-[rgba(15,55,55,0.6)]">WebGazelle®</a></div> <a href=""><img src="../icon/18915123-3.webp" width="40px" alt=""></a> <a href=""><img src="../icon/18915123-3.webp" width="40px" alt=""></a> </div>
+        </div>
+        <a href="http://127.0.0.1:5500/src/index.html" class="no-underline text-[rgb(20,40,60)] tracking-[2px] z-30"><img src="image/pngtree-arrow-up-red-circle-web-glossy-icon-arrow-png-image_10550330.png" alt="" class="fixed bottom-[60px] right-[60px] w-[90px] z-30"></a>
+    </footer>
+    <script>
+        let SousCategorie = document.getElementById("SousCategorie")
+        let deuxiemeLien = document.getElementById("deuxiemeLien")
+        let bordure1 = document.querySelector("#bordure1")
+        let bordure2 = document.querySelector("#bordure2")
+        let bordure3 = document.querySelector("#bordure3")
+        let bordure4 = document.querySelector("#bordure4")
+        let bd1 = document.querySelector("#bd1")
+        let bd2 = document.querySelector("#bd2")
+        let bd3 = document.querySelector("#bd3")
+        let bd4 = document.querySelector("#bd4")
+        let lienSpecial1 = document.querySelector("#lienSpecial1")
+        let lienSpecial2 = document.querySelector("#lienSpecial2")
+        let lienSpecial3 = document.querySelector("#lienSpecial3")
+        let lienSpecial4 = document.querySelector("#lienSpecial4")
+
+        let contenu1 = document.getElementById('contenu1')
+        let contenu2 = document.getElementById('contenu2')
+
+        let position1 = parseFloat(getComputedStyle(contenu1).marginLeft)
+        if (position1 <= -12){
+            contenu1.style.background = "red"
+        }
+        else{
+            contenu1.style.display = "flex"
+        }
+        function affiche(){
+            SousCategorie.style.display = "block"
+             deuxiemeLien.style.borderBottom = "rgb(250, 120, 50) solid 4px"
+        }
+        function sousAffiche(){
+            SousCategorie.style.display = "block"
+            deuxiemeLien.style.borderBottom = "rgb(250, 120, 50) solid 4px"
+        }
+        function efface(){
+            deuxiemeLien.style.borderBottom = "transparent solid 4px"
+            SousCategorie.style.display = "none"
+        }
+        function sousEfface(){
+            SousCategorie.style.display = "none"
+            deuxiemeLien.style.borderBottom = "transparent solid 4px"
+        }
+        function afficheImage1(){
+            bordure1.style.boxShadow = "0px 0px 30px rgb(100, 100, 100)"
+            bordure1.style.border = "10px white solid"
+            bd1.style.boxShadow = "0px 0px 20px rgb(100, 100, 100)"
+            lienSpecial1.style.background = "rgb(250, 120, 50)"        
+        }
+        function effaceImage1(){
+            bordure1.style.boxShadow = ""
+            bordure1.style.border = ""
+            bd1.style.boxShadow = ""
+            bordure1.style.transform = "scale(1)"
+            lienSpecial1.style.background = ""
+        }
+        function afficheImage2(){
+            bordure2.style.boxShadow = "0px 0px 30px rgb(100, 100, 100)"
+            bordure2.style.border = "12px white solid"
+            bd2.style.boxShadow = "0px 0px 20px rgb(100, 100, 100)"
+            lienSpecial2.style.background = "rgb(250, 120, 50)"        
+        }
+        function effaceImage2(){
+            bordure2.style.boxShadow = ""
+            bordure2.style.border = ""
+            bd2.style.boxShadow = ""
+            bordure2.style.transform = "scale(1)"
+            lienSpecial2.style.background = ""
+        }
+        function afficheImage3(){
+            bordure3.style.boxShadow = "0px 0px 30px rgb(100, 100, 100)"
+            bordure3.style.border = "10px white solid"
+            bd3.style.boxShadow = "0px 0px 20px rgb(100, 100, 100)"
+            lienSpecial3.style.background = "rgb(250, 120, 50)"
+        }
+        function effaceImage3(){
+            bordure3.style.boxShadow = ""
+            bordure3.style.border = ""
+            bd3.style.boxShadow = ""
+            bordure3.style.transform = "scale(1)"
+            lienSpecial3.style.background = ""
+        }
+        function afficheImage4(){
+            bordure4.style.boxShadow = "0px 0px 30px rgb(100, 100, 100)"
+            bordure4.style.border = "12px white solid"
+            bd4.style.boxShadow = "0px 0px 20px rgb(100, 100, 100)"
+            lienSpecial4.style.background = "rgb(250, 120, 50)"        
+        }
+        function effaceImage4(){
+            bordure4.style.boxShadow = ""
+            bordure4.style.border = ""
+            bd4.style.boxShadow = ""
+            bordure4.style.transform = "scale(1)"
+            lienSpecial4.style.background = ""
+        }
+
+        let face1 = document.getElementById('face1')
+        let insta1 = document.getElementById('insta1')
+        let face2 = document.getElementById('face2')
+        let insta2 = document.getElementById('insta2')
+
+        function faceColor1(){
+            face1.src = "image/facebook.png"
+        }
+
+        function faceNoColor1(){
+            face1.src = "image/facebook (1).png"
+        }
+        function instaColor1(){
+            insta1.src = "image/instagram.png"
+        }
+
+        function instaNoColor1(){
+            insta1.src = "image/instagram (1).png"
+        }
+        function faceColor2(){
+            face2.src = "image/facebook.png"
+        }
+
+        function faceNoColor2(){
+            face2.src = "image/facebook (1).png"
+        }
+        function instaColor2(){
+            insta2.src = "image/instagram.png"
+        }
+
+        function instaNoColor2(){
+            insta2.src = "image/instagram (1).png"
+        }
+        
+    </script>
+</body>
+</html>
